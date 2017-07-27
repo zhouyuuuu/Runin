@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/map_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<include-->
+    <!--android:id="@+id/data_layout"-->
+    <!--layout="@layout/layout_data"/>-->
+    <include
+        android:id="@+id/start_layout"
+        layout="@layout/layout_start"/>
+
+    <!--<include-->
+    <!--android:id="@+id/data_layout"-->
+    <!--layout="@layout/layout_data"/>-->
+
+    <FrameLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.domencai.runin.custom.DataView
+            android:id="@+id/data_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#D8FFFFFF"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow"/>
+    </FrameLayout>
+
+    <include layout="@layout/layout_finish"/>
+
+    <LinearLayout
+        android:id="@+id/pause_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/resume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ec5467"
+            android:gravity="center"
+            android:text="RESUME"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#b8e986"
+            android:gravity="center"
+            android:text="STOP"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="#B2FFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:gravity="center_vertical"
+            android:text="Slide To Lock"
+            android:textColor="#26000000"
+            android:textSize="16sp"/>
+
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="center_vertical|right"
+            android:text="Slide To Pause"
+            android:textColor="#26000000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scroll"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/blue_button"
+        android:gravity="center"
+        android:text="IN"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:textStyle="italic|bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="56dp"
+        android:background="@drawable/blue_button"
+        android:gravity="center"
+        android:text="START"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCFFFFFF"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#458EE5"
+        android:textSize="200sp"
+        android:typeface="sans"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/lock_layout"
+        layout="@layout/layout_lock"/>
+</merge>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context="com.domencai.runin.activity.SettingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <Button
+            android:id="@+id/btn_back_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_back_black"/>
+        <TextView
+            android:id="@+id/tv_title_setting"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/btn_back_setting"
+            android:text="更改用户名"
+            android:textSize="20sp"
+            android:textColor="#505050"/>
+        <Button
+            android:id="@+id/btn_sure_setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_selected"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/et_rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="编辑你的用户名"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="#505050"/>
+
+        <EditText
+            android:id="@+id/et_resign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="编辑你的个性签名"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="#505050"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_show_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="个性签名："
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_blue"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RunIn</string>
+    <string name="bad_GPS">GPS信号较差，可能导致轨迹或者数据计算不准确，确定开始吗？</string>
+</resources>

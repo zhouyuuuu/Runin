@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#fff"
+        android:elevation="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/JustATextView"
+            android:layout_width="wrap_content"
+            android:text="广州大学城内环 共5.3km"
+            android:textColor="#444444"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/lightning"
+            android:layout_toLeftOf="@id/JustATextView"
+            android:scaleType="centerInside"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="第15周风云榜"
+            android:textSize="30sp"
+            android:textColor="#444444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="20161208-20161215"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_Rank"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e9e9e9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:elevation="3dp"
+        android:background="#f8fdff"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="341"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#444444"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_margin="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/medal_1st_race"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:text="我的名字"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:text="时间 00:23:23"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
